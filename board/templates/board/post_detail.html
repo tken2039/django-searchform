@@ -1,0 +1,12 @@
+<!-- board/templates/board/post_detail.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>{{ object.title }} </h1>
+
+    <a>{{ object.tags }}</a>
+
+    <p>{{ object.text }}</p>
+{% endblock %}

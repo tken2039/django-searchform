@@ -1,0 +1,15 @@
+<!-- board/templates/board/post_list.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <p><a href="{% url 'board:create' %}">Create New</a></p>   
+
+    {% for post in object_list %}
+    <p><a href="{% url 'board:detail' post.id %}">{{ post }}</a></p>
+    {% endfor %}
+
+    {% include "board/snippets/pagination.html" %}
+
+{% endblock %}

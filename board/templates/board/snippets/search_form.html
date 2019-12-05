@@ -1,0 +1,6 @@
+<!-- board/templates/board/snippets/search_form.html -->
+
+<form action="{% url 'board:search_list' %}" method="GET">
+    <input type="search" name="q" value="{{ request.GET.q }}" />
+    <button type="submit">search</button>
+</form>
