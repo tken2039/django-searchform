@@ -15,6 +15,9 @@ urlpatterns = [
     # 記事の詳細ページ
     path('post/<int:pk>/', views.DetailView.as_view(), name='detail'),
 
+    # 検索ページ
+    path('search/', views.SearchListView.as_view(), name='search_list'),
+
     # path('post/<int:pk>/update/', views.update, name='update'),
 
     # path('post/<int:pk>/delete/', views.delete, name='delete'),

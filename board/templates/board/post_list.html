@@ -4,6 +4,8 @@
 
 {% block content %}
 
+    {% include "board/snippets/search_form.html" %}
+
     <p><a href="{% url 'board:create' %}">Create New</a></p>   
 
     {% for post in object_list %}
